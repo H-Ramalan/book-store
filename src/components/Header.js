@@ -1,4 +1,5 @@
 import './Header.css';
+import PersonIcon from './PersonIcon';
 
 /* <link
   rel="stylesheet"
@@ -20,8 +21,10 @@ const Header = () => (
         </a>
       </li>
     </ul>
-    <button className="button" type="submit">
-      <span className="material-symbols-outlined">person</span>
+    <button className="user" type="submit">
+      <span className="icon">
+        <PersonIcon />
+      </span>
     </button>
   </div>
 );

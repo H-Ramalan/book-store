@@ -58,7 +58,7 @@ a {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
 }
 
-.button {
+.user {
   cursor: pointer;
   width: 2.813rem;
   height: 2.813rem;
@@ -66,4 +66,5 @@ a {
   border: 1px solid #e8e8e8;
   background-color: #fff;
   margin-left: 23rem;
+  color: #0290ff;
 }
