@@ -1,4 +1,5 @@
 import './BookProgress.css';
+import PropTypes from 'prop-types';
 
 const BookProgress = ({ book }) => (
   <div className="book-progress">
@@ -27,4 +28,15 @@ const BookProgress = ({ book }) => (
     </div>
   </div>
 );
+
+BookProgress.propTypes = {
+  book: PropTypes.shape({
+    percentage: PropTypes.number.isRequired,
+    genre: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    author: PropTypes.string.isRequired,
+    chapter: PropTypes.number.isRequired,
+    // Add other prop validations for the 'book' object if needed
+  }).isRequired,
+};
 export default BookProgress;
