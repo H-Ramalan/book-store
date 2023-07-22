@@ -11,7 +11,6 @@ const BookProgress = ({ book }) => (
             {book.percentage}
             %
           </p>
-
           <p className="completed">Completed</p>
         </div>
       </div>
@@ -36,7 +35,6 @@ BookProgress.propTypes = {
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
     chapter: PropTypes.number.isRequired,
-    // Add other prop validations for the 'book' object if needed
   }).isRequired,
 };
 export default BookProgress;

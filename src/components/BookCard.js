@@ -16,7 +16,6 @@ BookCard.propTypes = {
     genre: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
-    // Add other prop validations for the 'book' object if needed
   }).isRequired,
 };
 export default BookCard;

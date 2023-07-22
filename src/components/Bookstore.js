@@ -1,4 +1,3 @@
-import Header from './Header';
 import './Bookstore.css';
 import BookList from './BookList';
 import AddBook from './AddBook';
@@ -32,7 +31,6 @@ const Bookstore = () => {
   ];
   return (
     <div className="book-store">
-      <Header />
       <BookList books={books} />
       <AddBook />
     </div>
