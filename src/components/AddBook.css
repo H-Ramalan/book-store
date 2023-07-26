@@ -1,0 +1,53 @@
+.add-book {
+  width: 87.5%;
+  margin: 3rem 6.25%;
+}
+
+.horizontal {
+  border: 1px solid #e8e8e8;
+  margin-bottom: 33px;
+}
+
+.form-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.75rem;
+  color: #888;
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book-name {
+  padding: 10px;
+  width: 50%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+}
+
+.selection {
+  padding: 10px;
+  width: 25%;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 1rem;
+  letter-spacing: -0.15px;
+  color: #121212;
+}
+
+.add-book-button {
+  padding: 10px;
+  width: 20%;
+  background-color: #0290ff;
+  border: none;
+  border-radius: 3px;
+  font-family: 'RobotoSlab', sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+}

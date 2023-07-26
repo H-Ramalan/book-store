@@ -1,0 +1,68 @@
+.book-progress {
+  display: flex;
+  align-items: stretch;
+}
+
+.circular-progress {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  border-right: 1px solid #e8e8e8;
+  padding-right: 3rem;
+}
+
+.oval {
+  border-radius: 50%;
+  width: 4.25rem;
+  height: 4.25rem;
+  border: 5px solid #307bbe;
+  border-left-color: #e8e8e8;
+  background-color: #fff;
+}
+
+.percentage {
+  height: 2.438rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: #121212;
+}
+
+.completed {
+  font-size: 16px;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  color: #121212;
+}
+
+.progress-chapter {
+  margin-left: 3rem;
+}
+
+.current-chapter {
+  opacity: 0.5;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  margin-bottom: 9px;
+  color: #121212;
+}
+
+.progress-button {
+  width: 11.5rem;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: none;
+  color: #fff;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+}
+
+.chapter-number {
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: var(--black-two);
+}

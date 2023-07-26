@@ -1,0 +1,10 @@
+.book-card {
+  width: 87.5%;
+  margin: 3rem 6.25%;
+  background-color: #fff;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1.5rem;
+}
