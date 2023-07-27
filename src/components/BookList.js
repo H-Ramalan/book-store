@@ -1,16 +1,14 @@
 import PropTypes from 'prop-types';
+
 import BookCard from './BookCard';
 
-const BookList = (props) => {
-  const { books } = props;
-  return (
-    <ul className="book-list">
-      {books.map((book) => (
-        <BookCard book={book} key={book.id} />
-      ))}
-    </ul>
-  );
-};
+const BookList = ({ books }) => (
+  <ul className="book-list">
+    {books.map((book) => (
+      <BookCard book={book} key={book.id} />
+    ))}
+  </ul>
+);
 BookList.propTypes = {
   book: PropTypes.shape({
     percentage: PropTypes.number.isRequired,
