@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { removeBook } from '../redux/books/booksSlice';
+import { deleteBook } from '../redux/books/booksSlice';
 import './BookCard.css';
 
 import BookDetails from './BookDetails';
@@ -9,7 +9,7 @@ import BookProgress from './BookProgress';
 const BookCard = ({ book }) => {
   const dispatch = useDispatch();
   const clickHandler = (id) => {
-    dispatch(removeBook(id));
+    dispatch(deleteBook(id));
   };
   return (
     <li className="book-card">
@@ -18,8 +18,8 @@ const BookCard = ({ book }) => {
         title={book.title}
         author={book.author}
         category={book.category}
-        id={book.bookId}
-        onClick={() => clickHandler(book.bookId)}
+        bookId={book.id}
+        onClick={clickHandler}
       />
       <BookProgress />
     </li>

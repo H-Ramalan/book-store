@@ -1,7 +1,9 @@
 import { useState } from 'react';
+// eslint-disable-next-line
+import { v4 as uuidv4 } from 'uuid';
 import './AddBook.css';
-import { useDispatch, useSelector } from 'react-redux';
-import { addBook } from '../redux/books/booksSlice';
+import { useDispatch } from 'react-redux';
+import { pushBook } from '../redux/books/booksSlice';
 
 const AddBook = () => {
   const [title, setTitle] = useState('');
@@ -9,19 +11,18 @@ const AddBook = () => {
   const [author, setAuthor] = useState('');
 
   const dispatch = useDispatch();
-  const books = useSelector((state) => state.book.books);
 
   const submitHandler = (e) => {
+    const id = uuidv4();
+    dispatch(
+      pushBook({
+        item_id: `book-id:${id}`,
+        title,
+        author,
+        category,
+      }),
+    );
     e.preventDefault();
-    const id = books.length + 1;
-    const newBook = {
-      bookId: `items${id}`,
-      title,
-      author,
-      category,
-    };
-
-    dispatch(addBook(newBook));
     setTitle('');
     setAuthor('');
     setCategory('');
@@ -46,14 +47,17 @@ const AddBook = () => {
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
           required
+          className="author"
         />
         <select
           className="selection"
           id="selection"
           value={category}
-          onSelect={(e) => setCategory(e.value)}
+          onChange={(e) => setCategory(e.target.value)}
           required
+          placeholder="Category"
         >
+          <option value="">Select Category</option>
           <option value="Action">Action</option>
           <option value="Economy">Economy</option>
           <option value="Fiction">Fiction</option>
