@@ -63,5 +63,11 @@
   font-size: 1rem;
   font-weight: 300;
   margin-bottom: 20px;
-  color: var(--black-two);
+  color: #121212;
+}
+
+.progress-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
